@@ -1,0 +1,143 @@
+:root {
+  --color-1: #040d12;
+  --color-2: #183d3d;
+  --color-3: #5c8374;
+  --color-4: #93b1a6;
+  --color-5: #afd4c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #bed8ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 90vh;
+  width: 90vw;
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* sol kısım başlangıç */
+.sol-kisim {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 18%;
+  height: 100%;
+}
+
+.card-bg-1 {
+  background: linear-gradient(
+    to bottom,
+    black,
+    rgb(46, 46, 46),
+    black,
+    rgb(46, 46, 46, 0.5)
+  );
+}
+.card-bg-2 {
+  background-color: var(--color-2);
+}
+.card-bg-3 {
+  background-color: var(--color-3);
+}
+.card-bg-4 {
+  background-color: var(--color-4);
+}
+.card-bg-5 {
+  background-color: var(--color-5);
+}
+
+/* sol kısım bitiş */
+
+.sag-kisim {
+  width: 38%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.sag-kisim .row-1,
+.sag-kisim .row-2,
+.sag-kisim .row-3,
+.sag-kisim .row-4,
+.sag-kisim .row-5 {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-sm {
+  width: 130px;
+  height: 100px;
+}
+
+.row-1 .card-sm:nth-child(1) {
+  background-color: yellow;
+}
+.row-1 .card-sm:nth-child(2) {
+  background-color: pink;
+}
+.row-1 .card-sm:nth-child(3) {
+  background-color: violet;
+}
+
+.card-md {
+  height: 100%;
+  width: 65%;
+}
+
+.row-2 .card-sm {
+  background-color: green;
+}
+
+.row-2 .card-md {
+  background-color: rgb(107, 219, 107);
+}
+
+.row-3 .card-sm {
+  background-color: red;
+}
+
+.row-3 .card-md {
+  background-color: rgb(228, 92, 92);
+}
+
+.row-4 .card-sm:nth-child(1) {
+  background-color: black;
+}
+
+.row-4 .card-sm:nth-child(2) {
+  background-color: gray;
+}
+
+.row-4 .card-sm:nth-child(3) {
+  background-color: rgb(197, 195, 195);
+}
+
+.row-5 .card-sm {
+  background-color: rgb(202, 202, 202);
+}
+
+.row-5 .card-md {
+  background-color: rgb(228, 228, 228);
+}
